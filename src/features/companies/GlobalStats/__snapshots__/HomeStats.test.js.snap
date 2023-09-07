@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RocketsList component renders correctly 1`] = `
+<div
+  className="home-stats bg-black container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="map-container mx-auto col-xl-6 col-md-6 col-sm-6 col-6"
+    >
+      <img
+        alt=""
+        className=""
+        src="spinning-world-2.gif"
+      />
+    </div>
+    <div
+      className="home-stats-title col-xl-6 col-md-6 col-sm-6 col-6"
+    >
+      <h3
+        className="bold project-title"
+      >
+        COMPANIES
+      </h3>
+      <p
+        style={
+          Object {
+            "alignContent": "left",
+            "whiteSpace": "pre-line",
+          }
+        }
+      >
+        +1.000.000USD
+      </p>
+      <hr
+        className="mx-auto my-bg-black text-center"
+      />
+    </div>
+  </div>
+</div>
+`;
