@@ -3,19 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import CountryStats from './CountryStats';
-import map from '../../../assets/images/earth-space.gif';
+import map from '../../../assets/images/spinning-world-2.gif';
 
 function HomeStats() {
   return (
-    <Container fluid className="home-stats">
+    <Container fluid className="home-stats bg-black">
       <Row>
         <Col
           key="country"
           xs={6}
           sm={6}
-          md={4}
-          xl={3}
-          className="map-container"
+          md={6}
+          xl={6}
+          className="map-container mx-auto"
         >
           <img className="" src={map} alt="" />
         </Col>
@@ -23,8 +23,8 @@ function HomeStats() {
           key="countries"
           xs={6}
           sm={6}
-          md={4}
-          xl={3}
+          md={6}
+          xl={6}
           className="home-stats-title"
         >
           <h3

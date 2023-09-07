@@ -11,16 +11,16 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container className="flex">
+    <Navbar bg="" expand="lg" expanded={expanded} className="">
+      <Container className="flex bg-blue">
         <Navbar.Brand>
-          <Link to="/" className="title">
+          <Link to="/" className="title no-style">
             <h1>&lt;</h1>
             <h2>MARKET CAP</h2>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarExpand" onClick={toggleNavbar} />
-        <Navbar.Collapse id="navbarExpand" expanded={expanded}>
+        <Navbar.Collapse id="navbarExpand">
           <Nav className="ml-auto bg-white">
             <Nav.Link as={NavLink} to="www.github.com/diarisdiakite" onClick={toggleNavbar}>
               Github

@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+:root {
+  font-family: $RobotoSlab, $Monserrat, Roboto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  width: 100%;
+  font-family: Impact, $RobotoSlab, $Monserrat;
+  color: $black;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+

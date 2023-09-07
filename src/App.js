@@ -14,6 +14,11 @@ import Sector from './features/companies/Sector';
 import UsersList from './features/users/UsersList';
 import User from './features/users/User';
 import NotFoundPage from './components/NotFoundPage';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fontsource/roboto';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/400-italic.css';
+import './assets/css/index.scss';
 
 function App() {
   return (

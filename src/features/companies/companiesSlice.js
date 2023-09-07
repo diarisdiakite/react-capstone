@@ -36,30 +36,6 @@ const companiesSlice = createSlice({
         return { ...company, followed: false };
       });
     },
-    /* countriesTotalCompanies: (state) => {
-      const companiesByCountry = {};
-
-      state.companies.map((company) => {
-        const { country } = company;
-        if (country) {
-          if (!companiesByCountry[country]) {
-            companiesByCountry[country] = 0;
-          }
-          companiesByCountry[country] += 1;
-        }
-      });
-      state.countries.forEach((country, index) => {
-        const totalCompanies = companiesByCountry[country] || 0;
-        state.countries[index] = {
-          ...country,
-          totalCompanies,
-        };
-      });
-      state.countries = state.countries.map((country) => ({
-        ...country,
-        totalCompanies: companiesByCountry[country] || 0,
-      }));
-    }, */
   },
   extraReducers: (builder) => {
     builder.addCase(fetchCompanies.pending, (state) => {

@@ -4,24 +4,24 @@ import { useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {
-  selectAllSectors,
+  selectAllIndustries,
 } from './companiesSlice';
 // import CompaniesListElements from './childComponents/CompaniesListElements';
 
-function Sectors() {
-  const sectors = useSelector(selectAllSectors);
-  const selectedSectors = sectors.filter((sector) => sector !== '');
+function Industries() {
+  const industries = useSelector(selectAllIndustries);
+  const selectedIndustries = industries.filter((industry) => industry !== '');
 
   return (
-    <Row className="bg-blue item-card">
-      {selectedSectors.map((sector) => {
-        // const countryCompanies = companiesByCountryFromSeclector[country];
-        console.log(selectedSectors);
+    <Row className="item-card bg-blue">
+      {selectedIndustries.map((industry) => {
+        const countryIndustries = industriesByCountryFromSeclector[country];
+        console.log(countryIndustries);
         /* const countryCompanies = companiesByCountryFromSeclector[country]; */
         /* const totalCompanies = selectedCountries ? selectedCountries.length : 0; */
         return (
           <Col
-            key={`countries-${sector}`}
+            key={`countries-${industry}`}
             xs={6}
             sm={6}
             md={4}
@@ -30,9 +30,9 @@ function Sectors() {
           >
             {/* <img id="image" src={map} alt="" /> */}
             <h3 className="bold project-title-text">
-              <Link to={`/sectors/${sector}`} className="no-style bold">{sector}</Link>
+              <Link to={`/indsutries/${industry}`} className="no-style bold">{industry}</Link>
             </h3>
-            <p><Link to={`/sectors/${sector}`} className="no-style bold project-title">View the companies</Link></p>
+            <p><Link to={`/industries/${industry}`} className="no-style bold project-title">View the companies</Link></p>
             <hr className="mx-auto my-bg-black text-center" />
           </Col>
         );
@@ -41,4 +41,4 @@ function Sectors() {
   );
 }
 
-export default Sectors;
+export default Industries;
