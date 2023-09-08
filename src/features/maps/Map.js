@@ -4,8 +4,8 @@ import { MapContainer, TileLayer, Polygon } from 'react-leaflet';
 import countries from './countries';
 import 'leaflet/dist/leaflet.css';
 
-function Map({ selectedISO }) {
-  const center = [selectedISO.latitude, selectedISO.longitude];
+function Map() {
+  const center = [0, 0];
 
   return (
     <MapContainer
@@ -20,7 +20,7 @@ function Map({ selectedISO }) {
 
       {
         countries.map((country) => {
-          const coordinates = [country.latitude, country.longitude];
+          const coordinates = [country.latitude, country.longitude] || [0, 0];
           return (
             <Polygon
               key={country.ISO}

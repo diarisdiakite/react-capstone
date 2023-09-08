@@ -2,7 +2,7 @@
 
 :root {
   --bg-color: rgba(0, 0, 0, 0.1);
-  --font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  --font-family: impact, 'Arial Narrow Bold', sans-serif;
   --bg-blue: rgb(7, 5, 200, 0.9);
   --bg-ligh-blue: rgb(7, 5, 100, 0.9);
   --success: rgb(7, 5, 200, 0.9);
@@ -27,7 +27,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Impact;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 800;
   font-size: larger;
   color: white;
@@ -102,7 +102,7 @@ p {
   color: black;
 }
 
-Link {
+link {
   text-decoration: none;
   color: black;
 }
@@ -133,7 +133,7 @@ Link {
 }
 
 .project-title p,
-.stats p{
+.stats p {
   font-weight: lighter;
   font-size: x-small;
 }
@@ -176,7 +176,7 @@ Link {
 
 .home-stats-title {
   width: 30%;
-  align-self: left;
+  align-self: flex-start;
   padding: 25% 0;
   background-color: var(--bg-color);
   z-index: 1;
@@ -219,7 +219,6 @@ Link {
   }
 
   img {
-    aspect-ratio: 300;
+    aspect-ratio: 100/1;
   }
 }
-

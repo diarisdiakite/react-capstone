@@ -23,9 +23,10 @@ img {
 }
 
 .title {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: baseline;
+  background: none;
 }
 
 .nav {
@@ -49,7 +50,7 @@ img {
   align-items: baseline;
   text-decoration: none;
   color: gray;
-  background-color: none;
+  background-color: transparent;
 }
 
 .active {
@@ -62,4 +63,3 @@ img {
   list-style-type: none;
   text-decoration: none;
 }
-

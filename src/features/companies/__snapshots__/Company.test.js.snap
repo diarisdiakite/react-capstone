@@ -5,7 +5,7 @@ exports[`RocketsList component renders correctly 1`] = `
   className="main-container"
 >
   <div
-    className="company-card"
+    className="no-style-black"
   >
     <div
       className="company"

@@ -10,7 +10,6 @@ import {
 
 function Industries() {
   const industries = useSelector(selectAllIndustries);
-  console.log(industries);
   const selectedIndustries = industries.filter((industry) => industry !== '');
 
   return (

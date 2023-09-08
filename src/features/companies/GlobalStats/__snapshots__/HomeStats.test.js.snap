@@ -5,7 +5,7 @@ exports[`RocketsList component renders correctly 1`] = `
   className="home-stats bg-black container-fluid"
 >
   <div
-    className="row"
+    className="bg-black row"
   >
     <div
       className="map-container mx-auto col-xl-6 col-md-6 col-sm-6 col-6"
