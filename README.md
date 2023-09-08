@@ -80,6 +80,7 @@ Project-feature7: Application deploy
 You can access the Financial-app at this link below.
 
 coming soon
+Description Video: https://www.loom.com/share/4da2b31382fa467e9a87f657916d40cc
 
 [`Back to top`](#readme-top)
 
