@@ -24,8 +24,8 @@ function Countries() {
         <div className="">
           <GlobalStats />
         </div>
-        <div>
-          <Row className="bg-blue item-card">
+        <div className="bg-blue">
+          <Row className="bg-blue">
             <div>
               <h2 className="bg-blue">List of the Countries</h2>
             </div>

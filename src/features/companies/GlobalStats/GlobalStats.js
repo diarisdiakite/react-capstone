@@ -16,19 +16,19 @@ function GlobalStats() {
   return (
     <div className="stats">
       <div className="item-card">
-        <h4><Link className="no-style-black" to="/sectors">{sectors.length}</Link></h4>
+        <h4><Link className="no-style-black" to="/">{sectors.length}</Link></h4>
         <p>Sectors</p>
       </div>
       <div className="stat-item">
-        <h4><Link className="no-style-black" to="/industries">{industries.length}</Link></h4>
+        <h4><Link className="no-style-black" to="/">{industries.length}</Link></h4>
         <p>Industries</p>
       </div>
       <div className="stat-item">
-        <h4><Link className="no-style-black" to="/companies">{companies.length}</Link></h4>
+        <h4><Link className="no-style-black" to="/">{companies.length}</Link></h4>
         <p>Companies</p>
       </div>
       <div className="stat-item">
-        <h4><Link className="no-style-black" to="/countries">{countries.length}</Link></h4>
+        <h4><Link className="no-style-black" to="/">{countries.length}</Link></h4>
         <p>Countries</p>
       </div>
     </div>
