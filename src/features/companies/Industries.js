@@ -10,33 +10,28 @@ import {
 
 function Industries() {
   const industries = useSelector(selectAllIndustries);
+  console.log(industries);
   const selectedIndustries = industries.filter((industry) => industry !== '');
 
   return (
     <Row className="item-card bg-blue">
-      {selectedIndustries.map((industry) => {
-        const countryIndustries = industriesByCountryFromSeclector[country];
-        console.log(countryIndustries);
-        /* const countryCompanies = companiesByCountryFromSeclector[country]; */
-        /* const totalCompanies = selectedCountries ? selectedCountries.length : 0; */
-        return (
-          <Col
-            key={`countries-${industry}`}
-            xs={6}
-            sm={6}
-            md={4}
-            xl={3}
-            className="text-center h-100 mx-auto item-card"
-          >
-            {/* <img id="image" src={map} alt="" /> */}
-            <h3 className="bold project-title-text">
-              <Link to={`/indsutries/${industry}`} className="no-style bold">{industry}</Link>
-            </h3>
-            <p><Link to={`/industries/${industry}`} className="no-style bold project-title">View the companies</Link></p>
-            <hr className="mx-auto my-bg-black text-center" />
-          </Col>
-        );
-      })}
+      {selectedIndustries.map((industry) => (
+        <Col
+          key={`industries-${industry}`}
+          xs={6}
+          sm={6}
+          md={4}
+          xl={3}
+          className="text-center h-100 mx-auto item-card"
+        >
+          {/* <img id="image" src={map} alt="" /> */}
+          <h3 className="bold project-title-text">
+            <Link to={`/indsutries/${industry}`} className="no-style bold">{industry}</Link>
+          </h3>
+          <p><Link to={`/industries/${industry}`} className="no-style bold project-title">View the companies</Link></p>
+          <hr className="mx-auto my-bg-black text-center" />
+        </Col>
+      ))}
     </Row>
   );
 }

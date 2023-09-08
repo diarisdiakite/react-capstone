@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="" expand="lg" expanded={expanded} className="">
-      <Container className="flex bg-blue">
+    <Container fluid className="flex bg-blue">
+      <Navbar bg="" expand="lg" expanded={expanded} className="">
         <Navbar.Brand>
           <Link to="/" className="title no-style">
             <h1>&lt;</h1>
@@ -36,8 +36,8 @@ const Header = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 };
 

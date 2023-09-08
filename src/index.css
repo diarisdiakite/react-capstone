@@ -3,14 +3,24 @@
 :root {
   --bg-color: rgba(0, 0, 0, 0.1);
   --font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  --bg-blue: rgb(25, 25, 214, 0.5);
-  --bg-ligh-blue: rgb(7, 5, 200, 0.9);
+  --bg-blue: rgb(7, 5, 200, 0.9);
+  --bg-ligh-blue: rgb(7, 5, 100, 0.9);
   --success: rgb(7, 5, 200, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg-blue {
   background: var(--bg-ligh-blue);
   color: white;
+}
+
+.x-small {
+  font-size: xx-small;
 }
 
 h1,
@@ -29,8 +39,14 @@ h4 {
   display: flex;
   flex-direction: column;
   top: 0;
-  background: var(--bg-color);
   color: white;
+}
+
+.home-stats-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: blue;
 }
 
 .overlay {
@@ -38,8 +54,8 @@ h4 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  background-color: var(--bg-ligh-blue);
   color: white;
   display: flex;
   flex-direction: column;
@@ -92,8 +108,8 @@ Link {
 }
 
 #image {
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 .item_card {

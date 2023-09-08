@@ -18,10 +18,7 @@ const fetchCompaniesAPI = async () => {
     }));
     const countries = [...new Set(data.map((company) => company.country))];
     const sectors = [...new Set(data.map((company) => company.sector))];
-    console.log(sectors);
     const industries = [...new Set(data.map((company) => company.industry))];
-    console.log(industries);
-    console.log(data);
     return {
       companies,
       countries,

@@ -71,33 +71,27 @@ export const selectCompaniesBySymbol = (state, companySymbol) => state
 export const selectAllCountries = (state) => state.companies.countries;
 
 export const selectCompaniesByCountry = (state, country) => {
-  console.log('Country:', country);
   const foundCountryCompanies = state.companies.companies.filter(
     (company) => company && company.country !== '' && company.country === country,
   );
-  console.log('Found Country Companies:', foundCountryCompanies);
   return foundCountryCompanies || null;
 };
 
 export const selectAllSectors = (state) => state.companies.sectors;
 
 export const selectCompaniesBySector = (state, sector) => {
-  console.log('Found Sector:', sector);
   const foundSectorCompanies = state.companies.companies.filter(
     (company) => company && company.sector !== '' && company.sector === sector,
   );
-  console.log('Found Sector Companies:', foundSectorCompanies);
   return foundSectorCompanies || null;
 };
 
 export const selectAllIndustries = (state) => state.companies.industries;
 
 export const selectCompaniesByIndustry = (state, industry) => {
-  console.log('Found Industry', industry);
   const foundIndustryCompanies = state.companies.companies.filter(
     (company) => company && company.industry !== '' && company.industry === industry,
   );
-  console.log('Found Sector Companies:', foundIndustryCompanies);
   return foundIndustryCompanies || null;
 };
 

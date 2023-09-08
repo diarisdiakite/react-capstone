@@ -2,10 +2,7 @@ import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import Header from './components/Header';
-// import NavBar from './components/NavBar';
 import Countries from './features/companies/Countries';
-// import Map from './features/maps/Map';
-// CountryMap from './features/maps/CountryMap';
 import Companies from './features/companies/Companies';
 import Sectors from './features/companies/Sectors';
 import Country from './features/companies/Country';

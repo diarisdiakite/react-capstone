@@ -2,13 +2,12 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import CountryStats from './CountryStats';
 import map from '../../../assets/images/spinning-world-2.gif';
 
 function HomeStats() {
   return (
     <Container fluid className="home-stats bg-black">
-      <Row>
+      <Row className="bg-black">
         <Col
           key="country"
           xs={6}

@@ -7,9 +7,6 @@ import 'leaflet/dist/leaflet.css';
 function Map({ selectedISO }) {
   const center = [selectedISO.latitude, selectedISO.longitude];
 
-  /* const polygonData = [
-    [selectedISO.latitude, selectedISO.longitude],
-  ]; */
   return (
     <MapContainer
       center={center}
@@ -24,7 +21,6 @@ function Map({ selectedISO }) {
       {
         countries.map((country) => {
           const coordinates = [country.latitude, country.longitude];
-          console.log('Coordinates:', country.ISO, coordinates);
           return (
             <Polygon
               key={country.ISO}
@@ -46,12 +42,5 @@ Map.propTypes = {
     longitude: PropTypes.number.isRequired,
   }).isRequired,
 };
-
-/* Map.defaultProps = {
-  selectedISO: {
-    latitude: 37.09024,
-    longitude: -95.712891,
-  },
-}; */
 
 export default Map;

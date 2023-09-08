@@ -49,6 +49,7 @@ img {
   align-items: baseline;
   text-decoration: none;
   color: gray;
+  background-color: none;
 }
 
 .active {

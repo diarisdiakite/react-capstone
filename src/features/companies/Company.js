@@ -11,7 +11,7 @@ function Company() {
 
   return (
     <div className="main-container">
-      <div className="company-card">
+      <div className="no-style-black">
         <div className="company" key={`company-${companySymbol}`}>
           <h3>{company?.companyName}</h3>
           <p><Link to={company?.sector}>{company?.sector}</Link></p>

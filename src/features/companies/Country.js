@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 import { Container, Table } from 'react-bootstrap';
 import { selectCompaniesByCountry } from './companiesSlice';
 import CountryStats from './GlobalStats/CountryStats';
-// import Map from '../maps/Map';
 
 function Country() {
   const { country } = useParams();
   const companiesByCountry = useSelector((state) => selectCompaniesByCountry(state, country));
   const componentCompaniesByCountry = companiesByCountry.filter((company) => company.companyName !== '');
   const componentCompaniesByCountryLength = componentCompaniesByCountry.length;
-  console.log(componentCompaniesByCountryLength);
 
   return (
     <Container className="single-country-items-list">
@@ -34,7 +32,7 @@ function Country() {
           <tbody>
             {componentCompaniesByCountry.map((company) => (
               <tr key={`${country}-${company}-${company.marketCap}`}>
-                <td><Link to={`/companies/${company.symbol}`}>{company.companyName}</Link></td>
+                <td><Link className="no-style-black bold" to={`/companies/${company.symbol}`}>{company.companyName}</Link></td>
                 <td>{company.marketCap}</td>
               </tr>
             ))}
