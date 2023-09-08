@@ -77,10 +77,8 @@ Project-feature7: Application deploy
 
 ## 🚀 <a name="live-demo"> Live Demo </a>
 
-You can access the Financial-app at this link below.
-
-coming soon
-Description Video: https://www.loom.com/share/4da2b31382fa467e9a87f657916d40cc
+You can access the Financial-app at this link: https://financial-metrics.onrender.com/
+Watch the video description Video: https://www.loom.com/share/4da2b31382fa467e9a87f657916d40cc
 
 [`Back to top`](#readme-top)
 
@@ -125,7 +123,7 @@ To run tests, run the following command: Open the project in code editor and run
 [`Back to top`](#readme-top)
 
 ### <a name="deployment">Deployment</a>
-You can deploy the Financial-app application using: google cloud, Microsoft Azure, Netlify by giving credit on usign our template or contricute via pull requests (read more in the contributing section).
+You can deploy the Financial-app application using: google cloud, Microsoft Azure, Netlify by giving credit on using our template or contribute via pull requests (read more in the contributing section).
 
 [`Back to top`](#readme-top)
 
