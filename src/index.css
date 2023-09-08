@@ -108,8 +108,8 @@ link {
 }
 
 #image {
-  width: 60%;
-  height: 60%;
+  width: 10%;
+  height: 10%;
 }
 
 .item_card {
@@ -170,7 +170,7 @@ link {
 }
 
 .map-container {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 

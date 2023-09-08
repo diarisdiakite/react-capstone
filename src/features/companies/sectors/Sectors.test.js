@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router';
-import store from '../store';
-import Sector from './Sectors';
+import store from '../../store';
+import Sectors from './Sectors';
 
 describe('RocketsList component', () => {
   it('renders correctly', () => {
@@ -11,7 +11,7 @@ describe('RocketsList component', () => {
       .create(
         <Provider store={store}>
           <MemoryRouter>
-            <Sector />
+            <Sectors />
           </MemoryRouter>
         </Provider>,
       )

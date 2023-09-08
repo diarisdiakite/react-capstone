@@ -2,9 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { selectCompaniesByIndustry } from './companiesSlice';
+import { selectCompaniesByIndustry } from '../companiesSlice';
 
-function Sector() {
+function Industry() {
   const { industry } = useParams();
   const companiesByIndustry = useSelector(
     (state) => selectCompaniesByIndustry(state, industry),
@@ -21,4 +21,4 @@ function Sector() {
   );
 }
 
-export default Sector;
+export default Industry;

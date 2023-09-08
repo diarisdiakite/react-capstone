@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import { selectCompaniesBySymbol, followCompany, unfollowCompany } from './companiesSlice';
+import { selectCompaniesBySymbol, followCompany, unfollowCompany } from '../companiesSlice';
 
 function Company() {
   const dispatch = useDispatch();

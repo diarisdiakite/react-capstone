@@ -21,11 +21,11 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarExpand" onClick={toggleNavbar} />
         <Navbar.Collapse id="navbarExpand">
-          <Nav className="ml-auto bg-white">
-            <Nav.Link as={NavLink} to="www.github.com/diarisdiakite" onClick={toggleNavbar}>
+          <Nav className="ml-auto">
+            <Nav.Link className="bg-blue white" as={NavLink} to="www.github.com/diarisdiakite" onClick={toggleNavbar}>
               Github
             </Nav.Link>
-            <Nav.Link as={NavLink} to="www.twitter.com/give-your-analytics" onClick={toggleNavbar}>
+            <Nav.Link as={NavLink} to="www.twitter.com/give-your-analytics" className="white" onClick={toggleNavbar}>
               LinkedIn
             </Nav.Link>
             <Nav.Link as={NavLink} to="www.twitter.com/give-your-analytics" onClick={toggleNavbar}>

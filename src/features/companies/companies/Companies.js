@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import {
   selectAllCompanies,
-} from './companiesSlice';
-import CompaniesListElements from './childComponents/CompaniesListElements';
+} from '../companiesSlice';
+import CompaniesListElements from '../childComponents/CompaniesListElements';
 
 function Companies() {
   const companies = useSelector(selectAllCompanies);

@@ -10,6 +10,11 @@
   background-color: white;
 }
 
+.bg-blue {
+  background: var(--bg-ligh-blue);
+  color: white;
+}
+
 .logo {
   width: 30px;
   height: 30px;
@@ -51,6 +56,10 @@ img {
   text-decoration: none;
   color: gray;
   background-color: transparent;
+}
+
+Nav.Link p {
+  color: white;
 }
 
 .active {

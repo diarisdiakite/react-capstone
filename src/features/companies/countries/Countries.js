@@ -6,17 +6,14 @@ import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import {
   selectAllCountries,
-  selectAllCompanies, selectAllSectors, selectAllIndustries,
-} from './companiesSlice';
-import HomeStats from './GlobalStats/HomeStats';
-import mapImage from '../../assets/images/localisation1.png';
+} from '../companiesSlice';
+import HomeStats from '../GlobalStats/HomeStats';
+import mapImage from '../../../assets/images/localisation1.png';
+import GlobalStats from '../GlobalStats/GlobalStats';
 
 function Countries() {
   const countries = useSelector(selectAllCountries);
   const selectedCountries = countries.filter((country) => country !== null);
-  const companies = useSelector(selectAllCompanies);
-  const sectors = useSelector(selectAllSectors);
-  const industries = useSelector(selectAllIndustries);
 
   return (
     <>
@@ -25,29 +22,12 @@ function Countries() {
       </div>
       <Container fluid className="">
         <div className="">
-          <div className="stats">
-            <div className="item-card">
-              <h4>{sectors.length}</h4>
-              <p>Sectors</p>
-            </div>
-            <div className="stat-item">
-              <h4>{industries.length}</h4>
-              <p>Industries</p>
-            </div>
-            <div className="stat-item">
-              <h4>{companies.length}</h4>
-              <p>Companies</p>
-            </div>
-            <div className="stat-item">
-              <h4>{countries.length}</h4>
-              <p>Countries</p>
-            </div>
-          </div>
+          <GlobalStats />
         </div>
         <div>
           <Row className="bg-blue item-card">
             <div>
-              <h2 className="bg-blue">List of countries</h2>
+              <h2 className="bg-blue">List of the Countries</h2>
             </div>
             {selectedCountries.map((country) => (
               <Col

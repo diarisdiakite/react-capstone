@@ -8,7 +8,7 @@ function CountryStats() {
   const selectedCountry = countries.find((countryData) => countryData.ISO === country);
 
   return (
-    <div key={country.ISO} className="single-country-items-list">
+    <div key={country.ISO} className="single-country-items-list map-container">
       <Map selectedISO={selectedCountry} />
     </div>
   );

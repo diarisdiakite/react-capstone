@@ -16,8 +16,6 @@ function NotFoundPage() {
       <p>
         Please contact us at
         <strong> diarisdiakite@gmail.com </strong>
-        and
-        <strong> brunokambere@gmail.com</strong>
       </p>
     </div>
   );

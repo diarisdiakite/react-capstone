@@ -14,6 +14,7 @@ function CompaniesListElements({ companies }) {
     const returnedCompanies = companies.filter((company) => company.companyName !== '');
     return returnedCompanies;
   }, [companies]);
+  console.log(selectedCompanies);
 
   if (!selectedCompanies) {
     return (
@@ -45,19 +46,19 @@ function CompaniesListElements({ companies }) {
               )
             </td>
             <td className="fixed-width desktop-only">
-              {!company.reserved && (
+              {!company.followed && (
               <Badge bg="secondary">
                 Not Following
               </Badge>
               )}
-              {company.reserved && (
+              {company.followed && (
               <Badge bg="success">
                 Following
               </Badge>
               )}
             </td>
             <td className="fixed-width">
-              {!company.reserved && (
+              {!company.followed && (
               <Button
                 type="button"
                 variant="outline-secondary"
@@ -67,7 +68,7 @@ function CompaniesListElements({ companies }) {
                 Follow
               </Button>
               )}
-              {company.reserved && (
+              {company.followed && (
               <Button
                 type="button"
                 variant="outline-danger"

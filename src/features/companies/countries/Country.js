@@ -3,8 +3,8 @@ import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Table } from 'react-bootstrap';
-import { selectCompaniesByCountry } from './companiesSlice';
-import CountryStats from './GlobalStats/CountryStats';
+import { selectCompaniesByCountry } from '../companiesSlice';
+import CountryStats from '../GlobalStats/CountryStats';
 
 function Country() {
   const { country } = useParams();
