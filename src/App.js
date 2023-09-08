@@ -17,7 +17,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@fontsource/roboto';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/400-italic.css';
-import './assets/css/index.scss';
 
 function App() {
   return (
