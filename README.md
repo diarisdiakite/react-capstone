@@ -181,6 +181,11 @@ You can reach out to us team by email [diarisdiakite@gmail.com](diarisdiakite@gm
 ## 📝 <a name="credit">Credit</a>
 this application was build by [Didy](https://diarisdiakite.github.io/my-portfolio/) proudly developed in [Microverse](https://www.microverse.org) program. 
 
+Original Design credit: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+[Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Data provided by [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
+
 [`Back to top`](#readme-top)
 
 ## 📝 <a name="licence">License</a>
