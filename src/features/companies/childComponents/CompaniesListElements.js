@@ -14,9 +14,8 @@ function CompaniesListElements({ companies }) {
     const returnedCompanies = companies.filter((company) => company.companyName !== '');
     return returnedCompanies;
   }, [companies]);
-  console.log(selectedCompanies);
 
-  if (!selectedCompanies) {
+  if (selectedCompanies.length === 0) {
     return (
       <div>
         Companies not found
