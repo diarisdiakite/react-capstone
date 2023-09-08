@@ -159,14 +159,14 @@ If you like the [Financial-app]() you can support our work. Visit [Didy personal
 [`Back to top`](#readme-top)
 
 ## 🙏 <a name="acknowledgments">Acknowledgments</a>
-We would like to thank the Microverse community to inspire and encourage everyday programmers and aspiring programmers.
+We would like to thank the Microverse community for inspiring and encouraging everyday programmers and aspiring programmers.
  
 [`Back to top`](#readme-top)
 
 ## ❓ <a name="faq">FAQ (OPTIONAL)</a>
 Here are the most common questions about this project.
 
-#### `Can we use the application as an organization`
+#### `Can we use the application as an organization?`
 
 #### `Answer`
 Yes! Make sure you give us credit of the application. 
@@ -174,12 +174,17 @@ Yes! Make sure you give us credit of the application.
 ### `Where can we reach out to you ?`
 
 #### `Answer`
-You can reach out to us team by email [diarisdiakite@gmail.com](diarisdiakite@gmail.com).
+You can contact our team by email [diarisdiakite@gmail.com](diarisdiakite@gmail.com).
 
 [`Back to top`](#readme-top)
 
 ## 📝 <a name="credit">Credit</a>
-this application was build by [Didy](https://diarisdiakite.github.io/my-portfolio/) proudly developed in [Microverse](https://www.microverse.org) program. 
+this application was build by [Didy](https://diarisdiakite.github.io/my-portfolio/) proudly developed in [Microverse](https://www.microverse.org) program.
+
+Original Design credit: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+[Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Data provided by [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
 
 [`Back to top`](#readme-top)
 
